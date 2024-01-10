@@ -1,0 +1,11 @@
+name: Bicep-IAC-Deployment
+
+on: push
+
+jobs:
+  bicep-iac:
+    name: Code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
